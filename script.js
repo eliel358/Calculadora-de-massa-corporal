@@ -3,7 +3,6 @@ function calc(){
     peso = document.getElementById("peso").value
     altura = altura.replace(",",".")
     imc = eval("peso/altura**2")
-
     imc =  imc.toFixed(2)
     idade = document.getElementById('idade').value
     document.getElementById("resultado").innerHTML = ("IMC: " + imc)
