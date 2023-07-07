@@ -34,17 +34,15 @@ function calc(){
         }
     }else{
         if(imc<= 22){
-            document.getElementById("classificacao").innerHTML = ("baixo peso (idoso)")
+            document.getElementById("classificacao").innerHTML = ("baixo peso")
         }
         if(imc>22 && imc<27){
-            document.getElementById("classificacao").innerHTML = ("adequado ou eutrófico (idoso)")
+            document.getElementById("classificacao").innerHTML = ("adequado ou eutrófico")
         }
         if(imc>=27){
-            document.getElementById("classificacao").innerHTML = ("sobrepeso (idoso)")
+            document.getElementById("classificacao").innerHTML = ("sobrepeso")
         }
     }
 
 
 }
-
-calc()
