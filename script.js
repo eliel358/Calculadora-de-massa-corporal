@@ -37,7 +37,7 @@ function calc(){
             document.getElementById("classificacao").innerHTML = ("baixo peso")
         }
         if(imc>22 && imc<27){
-            document.getElementById("classificacao").innerHTML = ("adequado ou eutrófico")
+            document.getElementById("classificacao").innerHTML = ("adequado")
         }
         if(imc>=27){
             document.getElementById("classificacao").innerHTML = ("sobrepeso")
