@@ -6,7 +6,6 @@ function calc(){
     imc =  imc.toFixed(2)
     idade = document.getElementById('idade').value
     document.getElementById("resultado").innerHTML = ("IMC: " + imc)
-
     if (idade<60){
         if(imc<18.5){
             document.getElementById("classificacao").innerHTML = ("baixo peso")
