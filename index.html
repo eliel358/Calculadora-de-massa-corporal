@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Calculadora de Imc</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/js/script.js" defer></script>
 </head>
 <body>
     
     <div class="conteiner">
-        <div class="title">IMC</div>
-        <div class="content">
-            <p>Seu peso (Kg):</p> <input id="peso" class="input" type="number">
-            <p>Sua altura (M):</p> <input id="altura" class="input" type="number">
-            <p>Sua idade:</p> <input id="idade" class="input" type="number">
-            <button class="botao" onclick="calc()">Calcular</button>
+        <div class="inputs">
+            <div class="row">
+                <p>Seu peso (Kg):</p> <input id="peso" type="number">
+            </div>
+            <div class="row">    
+                <p>Sua altura (M):</p> <input id="altura" type="number">
+            </div>    
+            <div class="row">
+                <p>Sua idade:</p> <input id="idade" type="number">
+            </div>    
+    </div>
+        <div class="resultados">
+            <button onclick="calc()">Calcular</button>
             <p id="resultado" class="classificacao"> </p>
             <p id="classificacao" class="classificacao"></p>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
